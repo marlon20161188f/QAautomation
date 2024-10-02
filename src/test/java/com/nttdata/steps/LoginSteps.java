@@ -47,4 +47,19 @@ public class LoginSteps {
         this.driver.findElement(LoginPage.loginButton).click();
     }
 
+    public void irlogin(){
+        this.driver.findElement(LoginPage.iniciarsesionButton).click();
+    }
+    public void irClothesMen(){
+        this.driver.findElement(LoginPage.ClothesButton).click();
+        this.driver.findElement(LoginPage.MenButton).click();
+    }
+    public void agregarproducto(){
+        this.driver.findElement(LoginPage.producto).click();
+        this.driver.findElement(LoginPage.agregarcarrito).click();
+    }
+
+    public void confirmarproducto() {
+        this.driver.findElement(LoginPage.confirmarproducto).click();
+    }
 }

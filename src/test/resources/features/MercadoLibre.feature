@@ -1,4 +1,11 @@
 Feature: MercadoLibre
+
+  @login
+  Scenario: Login correcto a la QA
+    Given dado que me encuentro en la pagina de QA
+    When inicio sesion con mi usuario "marlonavilat@gmail.com" y clave "20161188fF*"
+    Then se muestra la pagina "Bienvenido Marlon"
+
 @busquedaProducto
   Scenario: Busqueda de Productos
     Given estoy en la página de MercadoLibre
